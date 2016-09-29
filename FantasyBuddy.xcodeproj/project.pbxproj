@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8712BDD01C973D29006A475A /* PlayerInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8712BDCF1C973D29006A475A /* PlayerInfoTableViewCell.swift */; };
+		87485F521C80EFA400FC8D41 /* PlayerStatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87485F511C80EFA400FC8D41 /* PlayerStatsTableViewController.swift */; };
+		8763CADC1CEA4CDE00AD7D28 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8763CADB1CEA4CDE00AD7D28 /* Realm.framework */; };
+		8763CADD1CEA4CDE00AD7D28 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8763CADB1CEA4CDE00AD7D28 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8763CAE01CEA4CE600AD7D28 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8763CADF1CEA4CE600AD7D28 /* RealmSwift.framework */; };
+		8763CAE11CEA4CE600AD7D28 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8763CADF1CEA4CE600AD7D28 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		876EC5C41C88B8B100A00306 /* PlayerStatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876EC5C31C88B8B100A00306 /* PlayerStatsTableViewCell.swift */; };
+		877B901D1CA459060034C8E9 /* PlayerNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877B901C1CA459060034C8E9 /* PlayerNewsCollectionViewCell.swift */; };
+		87D112F11C8A1341005DEBE2 /* PlayerStatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D112F01C8A1341005DEBE2 /* PlayerStatsCollectionViewCell.swift */; };
+		87FE0C521C7F809400C44E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE0C511C7F809400C44E9F /* AppDelegate.swift */; };
+		87FE0C571C7F809400C44E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE0C551C7F809400C44E9F /* Main.storyboard */; };
+		87FE0C591C7F809500C44E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87FE0C581C7F809500C44E9F /* Assets.xcassets */; };
+		87FE0C5C1C7F809500C44E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE0C5A1C7F809500C44E9F /* LaunchScreen.storyboard */; };
+		87FE0C6B1C7F81AE00C44E9F /* PlayerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE0C6A1C7F81AE00C44E9F /* PlayerListTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8763CADE1CEA4CDE00AD7D28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8763CAE11CEA4CE600AD7D28 /* RealmSwift.framework in Embed Frameworks */,
+				8763CADD1CEA4CDE00AD7D28 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8712BDCF1C973D29006A475A /* PlayerInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PlayerInfoTableViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		87485F511C80EFA400FC8D41 /* PlayerStatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PlayerStatsTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8763CADB1CEA4CDE00AD7D28 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		8763CADF1CEA4CE600AD7D28 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		876EC5C31C88B8B100A00306 /* PlayerStatsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStatsTableViewCell.swift; sourceTree = "<group>"; };
+		877B901C1CA459060034C8E9 /* PlayerNewsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		87D112F01C8A1341005DEBE2 /* PlayerStatsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStatsCollectionViewCell.swift; sourceTree = "<group>"; };
+		87FE0C4E1C7F809400C44E9F /* FantasyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FE0C511C7F809400C44E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		87FE0C561C7F809400C44E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87FE0C581C7F809500C44E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87FE0C5B1C7F809500C44E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87FE0C5D1C7F809500C44E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FE0C6A1C7F81AE00C44E9F /* PlayerListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PlayerListTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87FE0C4B1C7F809400C44E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8763CAE01CEA4CE600AD7D28 /* RealmSwift.framework in Frameworks */,
+				8763CADC1CEA4CDE00AD7D28 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8763CAE61CEAA05900AD7D28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8763CADF1CEA4CE600AD7D28 /* RealmSwift.framework */,
+				8763CADB1CEA4CDE00AD7D28 /* Realm.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		87FE0C451C7F809400C44E9F = {
+			isa = PBXGroup;
+			children = (
+				87FE0C501C7F809400C44E9F /* FantasyBuddy */,
+				87FE0C4F1C7F809400C44E9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87FE0C4F1C7F809400C44E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87FE0C4E1C7F809400C44E9F /* FantasyBuddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87FE0C501C7F809400C44E9F /* FantasyBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				87FE0C511C7F809400C44E9F /* AppDelegate.swift */,
+				87FE0C6A1C7F81AE00C44E9F /* PlayerListTableViewController.swift */,
+				87485F511C80EFA400FC8D41 /* PlayerStatsTableViewController.swift */,
+				87FE0C5A1C7F809500C44E9F /* LaunchScreen.storyboard */,
+				87FE0C551C7F809400C44E9F /* Main.storyboard */,
+				8712BDCF1C973D29006A475A /* PlayerInfoTableViewCell.swift */,
+				876EC5C31C88B8B100A00306 /* PlayerStatsTableViewCell.swift */,
+				87D112F01C8A1341005DEBE2 /* PlayerStatsCollectionViewCell.swift */,
+				877B901C1CA459060034C8E9 /* PlayerNewsCollectionViewCell.swift */,
+				87FE0C581C7F809500C44E9F /* Assets.xcassets */,
+				87FE0C5D1C7F809500C44E9F /* Info.plist */,
+				8763CAE61CEAA05900AD7D28 /* Frameworks */,
+			);
+			path = FantasyBuddy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87FE0C4D1C7F809400C44E9F /* FantasyBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87FE0C601C7F809500C44E9F /* Build configuration list for PBXNativeTarget "FantasyBuddy" */;
+			buildPhases = (
+				87FE0C4A1C7F809400C44E9F /* Sources */,
+				87FE0C4B1C7F809400C44E9F /* Frameworks */,
+				87FE0C4C1C7F809400C44E9F /* Resources */,
+				8763CADE1CEA4CDE00AD7D28 /* Embed Frameworks */,
+				8763CAE31CEA99F900AD7D28 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FantasyBuddy;
+			productName = fantasy_bball_v1.2;
+			productReference = 87FE0C4E1C7F809400C44E9F /* FantasyBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87FE0C461C7F809400C44E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = kevinho;
+				TargetAttributes = {
+					87FE0C4D1C7F809400C44E9F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4E4MJ268QD;
+					};
+				};
+			};
+			buildConfigurationList = 87FE0C491C7F809400C44E9F /* Build configuration list for PBXProject "FantasyBuddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87FE0C451C7F809400C44E9F;
+			productRefGroup = 87FE0C4F1C7F809400C44E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87FE0C4D1C7F809400C44E9F /* FantasyBuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87FE0C4C1C7F809400C44E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FE0C5C1C7F809500C44E9F /* LaunchScreen.storyboard in Resources */,
+				87FE0C591C7F809500C44E9F /* Assets.xcassets in Resources */,
+				87FE0C571C7F809400C44E9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8763CAE31CEA99F900AD7D28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87FE0C4A1C7F809400C44E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				876EC5C41C88B8B100A00306 /* PlayerStatsTableViewCell.swift in Sources */,
+				87485F521C80EFA400FC8D41 /* PlayerStatsTableViewController.swift in Sources */,
+				87D112F11C8A1341005DEBE2 /* PlayerStatsCollectionViewCell.swift in Sources */,
+				87FE0C6B1C7F81AE00C44E9F /* PlayerListTableViewController.swift in Sources */,
+				8712BDD01C973D29006A475A /* PlayerInfoTableViewCell.swift in Sources */,
+				877B901D1CA459060034C8E9 /* PlayerNewsCollectionViewCell.swift in Sources */,
+				87FE0C521C7F809400C44E9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87FE0C551C7F809400C44E9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87FE0C561C7F809400C44E9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87FE0C5A1C7F809500C44E9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87FE0C5B1C7F809500C44E9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87FE0C5E1C7F809500C44E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kevin Ho (4E4MJ268QD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kevin Ho (4E4MJ268QD)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "355ad0f8-7be0-4b23-bf28-bb6eb1d14b7b";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87FE0C5F1C7F809500C44E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kevin Ho (4E4MJ268QD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kevin Ho (4E4MJ268QD)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "355ad0f8-7be0-4b23-bf28-bb6eb1d14b7b";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87FE0C611C7F809500C44E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kevin Ho (4E4MJ268QD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kevin Ho (4E4MJ268QD)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/RealmSwift.framework",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FantasyBuddy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinho.fantasybuddy;
+				PRODUCT_NAME = FantasyBuddy;
+				PROVISIONING_PROFILE = "087e4dec-9428-4c99-8cb4-e5fd6adccf28";
+			};
+			name = Debug;
+		};
+		87FE0C621C7F809500C44E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kevin Ho (4E4MJ268QD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kevin Ho (4E4MJ268QD)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/RealmSwift.framework",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FantasyBuddy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinho.fantasybuddy;
+				PRODUCT_NAME = FantasyBuddy;
+				PROVISIONING_PROFILE = "087e4dec-9428-4c99-8cb4-e5fd6adccf28";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87FE0C491C7F809400C44E9F /* Build configuration list for PBXProject "FantasyBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87FE0C5E1C7F809500C44E9F /* Debug */,
+				87FE0C5F1C7F809500C44E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87FE0C601C7F809500C44E9F /* Build configuration list for PBXNativeTarget "FantasyBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87FE0C611C7F809500C44E9F /* Debug */,
+				87FE0C621C7F809500C44E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87FE0C461C7F809400C44E9F /* Project object */;
+}
