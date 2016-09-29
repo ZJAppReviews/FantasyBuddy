@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  fantasy_bball_v1.2
+//  FantasyBuddy
 //
 //  Created by Kevin Ho on 2/25/16.
-//  Copyright © 2016 DankApp. All rights reserved.
+//  Copyright © 2016 Kevin Ho. All rights reserved.
 //
 
 import UIKit
@@ -157,8 +157,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         // Constants
-        let PREV_SEASON             = "2014-15"
-        let CURRENT_SEASON          = "2015-16"
+        let PREV_SEASON             = "2015-16"
+        let CURRENT_SEASON          = "2016-17"
         let CURRENT_YEAR            = "2016"
         
         let f_team_id               = "1610612737"

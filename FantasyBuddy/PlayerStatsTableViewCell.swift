@@ -1,9 +1,9 @@
 //
 //  PlayerStatsTableViewCell.swift
-//  fantasy_bball_v1.2
+//  FantasyBuddy
 //
 //  Created by Kevin Ho on 3/3/16.
-//  Copyright © 2016 DankApp. All rights reserved.
+//  Copyright © 2016 Kevin Ho. All rights reserved.
 //
 
 import UIKit

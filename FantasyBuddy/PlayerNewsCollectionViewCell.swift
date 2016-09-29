@@ -1,9 +1,9 @@
 //
 //  PlayerNewsCollectionViewCell.swift
-//  fantasy_basketball_app
+//  FantasyBuddy
 //
 //  Created by Kevin Ho on 3/24/16.
-//  Copyright © 2016 DankApp. All rights reserved.
+//  Copyright © 2016 Kevin Ho. All rights reserved.
 //
 
 import UIKit

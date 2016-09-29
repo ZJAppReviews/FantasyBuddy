@@ -1,9 +1,9 @@
 //
 //  PlayerListTableViewController.swift
-//  fantasy_bball_v1.2
+//  FantasyBuddy
 //
 //  Created by Kevin Ho on 2/25/16.
-//  Copyright © 2016 DankApp. All rights reserved.
+//  Copyright © 2016 Kevin Ho. All rights reserved.
 //
 //
 //  Notes: Loads list of NBA players, detailed by position and team. Search implemented.

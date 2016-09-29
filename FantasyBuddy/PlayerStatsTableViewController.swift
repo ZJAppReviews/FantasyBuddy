@@ -1,9 +1,9 @@
 //
 //  PlayerStatsTableViewController.swift
-//  fantasy_bball_v1.2
+//  FantasyBuddy
 //
 //  Created by Kevin Ho on 2/26/16.
-//  Copyright © 2016 DankApp. All rights reserved.
+//  Copyright © 2016 Kevin Ho. All rights reserved.
 //
 //
 //  Notes: Displays player info, game logs, and news of selected player.
@@ -16,7 +16,7 @@ import RealmSwift
 // Constants (public)
 // Subject to update with start of each season
 
-let CURRENT_SEASON  = "2015-16"
+let CURRENT_SEASON  = "2016-17"
 let CURRENT_YEAR    = "2016"
 let NUM_STATS       = 13
 
@@ -202,7 +202,7 @@ class PlayerStatsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
-
+        
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         print(screenSize.size)
         
@@ -248,16 +248,6 @@ class PlayerStatsTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        
-        // Heights
-        
-        // 480:
-        // iPad: 2, Air, Air 2
-        // iPhone: 4S
-        
-        // 667:
-        // iPad: Pro, Retina
-        // iPhone: 6S
      
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         
@@ -411,9 +401,11 @@ extension PlayerStatsTableViewController: UICollectionViewDelegate, UICollection
         
         if collectionView.tag == 1 {
             
-            let statLabels = [" ", "OPP", "FG", "FG%", "FT", "FT%", "3PM", "PTS", "REB", "AST", "STL", "BLK", "TO"]
-
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("statsCell2", forIndexPath: indexPath) as! PlayerStatsCollectionViewCell
+
+            if (currentGameLogs.count > 1) {
+                
+            let statLabels = [" ", "OPP", "FG", "FG%", "FT", "FT%", "3PM", "PTS", "REB", "AST", "STL", "BLK", "TO"]
 
             cell.cellLabel.text = statLabels[indexPath.row]
             cell.statVal1.text = currentGameLogs[0].log1[indexPath.row].stat
@@ -421,7 +413,17 @@ extension PlayerStatsTableViewController: UICollectionViewDelegate, UICollection
             cell.statVal3.text = currentGameLogs[0].log3[indexPath.row].stat
             cell.statVal4.text = currentGameLogs[0].log4[indexPath.row].stat
             cell.statVal5.text = currentGameLogs[0].log5[indexPath.row].stat
-
+            
+            } else {
+                cell.cellLabel.text = ""
+                cell.statVal1.text = ""
+                cell.statVal2.text = ""
+                cell.statVal3.text = ""
+                cell.statVal4.text = ""
+                cell.statVal5.text = ""
+                
+            }
+            
             return cell
         
         } else {
@@ -429,6 +431,7 @@ extension PlayerStatsTableViewController: UICollectionViewDelegate, UICollection
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("newsCell2", forIndexPath: indexPath) as! PlayerNewsCollectionViewCell
             
             let playerNews = getNews()
+            
             if playerNews.isEmpty {
                 if indexPath.row == 0 {
                     cell.headline.text = "No recent news"
@@ -436,11 +439,13 @@ extension PlayerStatsTableViewController: UICollectionViewDelegate, UICollection
                     return cell
                 }
             } else {
-                cell.date.text = playerNews[indexPath.row][0].stringByReplacingOccurrencesOfString(" - ", withString: ", ")
-                cell.report.text = playerNews[indexPath.row][1].stringByReplacingOccurrencesOfString("&quot;", withString: "\"")
-                cell.impact.text = playerNews[indexPath.row][2].stringByReplacingOccurrencesOfString("&quot;", withString: "\"")
+                if (indexPath.row < playerNews.count) {
+                    cell.date.text = playerNews[indexPath.row][0].stringByReplacingOccurrencesOfString(" - ", withString: ", ")
+                    cell.report.text = playerNews[indexPath.row][1].stringByReplacingOccurrencesOfString("&quot;", withString: "\"")
+                    cell.impact.text = playerNews[indexPath.row][2].stringByReplacingOccurrencesOfString("&quot;", withString: "\"")
+                }
             }
-
+            
             return cell
         
         }
