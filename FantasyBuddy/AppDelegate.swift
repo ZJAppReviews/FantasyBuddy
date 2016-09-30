@@ -226,7 +226,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 // Parameters
                 let paramsArray = getParams(CURRENT_SEASON, end_para: "")
-
+                
                 for i in 0 ..< paramsArray.count
                 {
                 

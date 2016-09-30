@@ -16,6 +16,7 @@ import RealmSwift
 // Constants (public)
 // Subject to update with start of each season
 
+let PREV_SEASON     = "2015-16"
 let CURRENT_SEASON  = "2016-17"
 let CURRENT_YEAR    = "2016"
 let NUM_STATS       = 13
@@ -48,14 +49,20 @@ class PlayerStatsTableViewController: UITableViewController {
         stat3 = ""
         
         let endpoint = "playergamelog"
-        let params = "PlayerID=" + player_id! + "&Season=" + CURRENT_SEASON + "&SeasonType=Regular%20Season"
-        let gameLogArray = getRowSetArr(endpoint, para: params, setName: "PlayerGameLog", isRow: true)
+        var params = "PlayerID=" + player_id! + "&Season=" + CURRENT_SEASON + "&SeasonType=Regular%20Season"
+        var gameLogArray = getRowSetArr(endpoint, para: params, setName: "PlayerGameLog", isRow: true)
         
+        // If current regular season has not started yet = no game logs available
+        // Use gamelogs from previous season
+        if (gameLogArray.count < 1) {
+            params = "PlayerID=" + player_id! + "&Season=" + PREV_SEASON + "&SeasonType=Regular%20Season"
+            gameLogArray = getRowSetArr(endpoint, para: params, setName: "PlayerGameLog", isRow: true)
+        }
         
         // Index out of bounds when gameVal => count, since those game logs dont exist if player hasn't played gameVal # games
         //  -> else = empty stat line
         if gameVal < gameLogArray.count {
-        
+
             // OPP
             let temp_stat1 = String((gameLogArray[gameVal] as! NSArray)[4])
 //            let temp_stat1 = String(gameLogArray[gameVal][4])
@@ -267,8 +274,6 @@ class PlayerStatsTableViewController: UITableViewController {
         }
         
     }
- 
-    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
@@ -405,7 +410,7 @@ extension PlayerStatsTableViewController: UICollectionViewDelegate, UICollection
             
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("statsCell2", forIndexPath: indexPath) as! PlayerStatsCollectionViewCell
 
-            if (currentGameLogs.count > 1) {
+            if (!currentGameLogs[0].log1[indexPath.row].stat.isEmpty) {
                 
             let statLabels = [" ", "OPP", "FG", "FG%", "FT", "FT%", "3PM", "PTS", "REB", "AST", "STL", "BLK", "TO"]
 
