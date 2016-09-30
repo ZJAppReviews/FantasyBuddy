@@ -304,7 +304,12 @@ class PlayerInfoTableViewCell: UITableViewCell {
         self.name.adjustsFontSizeToFitWidth = true
         
         // Player info
-        let bio_text = player[0].playerInfo!.position + "  |  " + teamName + " #" + playerNum
+        var bio_text = ""
+        if (playerNum == "<null>") {
+            bio_text = player[0].playerInfo!.position + "  |  " + teamName
+        } else {
+            bio_text = player[0].playerInfo!.position + "  |  " + teamName + " #" + playerNum
+        }
         self.bio.text = bio_text
         self.bio.adjustsFontSizeToFitWidth = true
 

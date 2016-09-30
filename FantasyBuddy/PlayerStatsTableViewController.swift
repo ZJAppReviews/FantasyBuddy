@@ -203,8 +203,10 @@ class PlayerStatsTableViewController: UITableViewController {
         
         self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
         
+        /*
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         print(screenSize.size)
+        */
         
         var gameIndex = 0
         var statIndex = 0
