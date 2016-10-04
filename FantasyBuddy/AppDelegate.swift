@@ -546,7 +546,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             currentPlayer.playerInfo    = pInfo
             currentPlayer.teamInfo      = tInfo
             
-            allPlayers.players.append(currentPlayer)
+            // Players moving in/out of the league will be nulled, check accordingly
+            if (pInfo.name != "<null>") {
+                allPlayers.players.append(currentPlayer)
+            }
             
         }
         

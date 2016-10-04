@@ -366,14 +366,47 @@ extension PlayerStatsTableViewController: UICollectionViewDelegate, UICollection
                         let impactData = impactArray[1]
                         
                         let dateArray = impactData.componentsSeparatedByString(" <span class='date'>")
-                        let impact = dateArray[0]
+                        let impactRaw = dateArray[0]
                         let dateData = dateArray[1]
                         
                         // Gather date of reports
                         let dateData2 = dateData.componentsSeparatedByString("</span>")
                         let date = dateData2[0]
                         
-                        newsArray.append([date, report, impact])
+                        // Limit size of impact description if too long
+                        if (impactRaw.characters.count > 400) {
+
+                            var impactShorter = impactRaw.componentsSeparatedByString(".")
+                            var impact = ""
+
+                            var sentencesToRemoveMin1 = 2
+                            if (impactRaw.characters.count > 600) {
+                                if (impactShorter.count > 3) {
+                                    sentencesToRemoveMin1 = 3
+                                }
+                            }
+                            if (impactRaw.characters.count > 750) {
+                                if (impactShorter.count > 4) {
+                                sentencesToRemoveMin1 = 4
+                                }
+                            }
+                            if (impactRaw.characters.count > 900) {
+                                if (impactShorter.count > 5) {
+                                    sentencesToRemoveMin1 = 5
+                                }
+                            }
+                            
+                            // Delete last sentence (search for second to last period from end index)
+                            for s in 0 ..< impactShorter.count-sentencesToRemoveMin1 {
+                                impact += impactShorter[s] + "."
+                            }
+                            
+                            newsArray.append([date, report, impact])
+                            
+                        } else {
+                            
+                            newsArray.append([date, report, impactRaw])
+                        }
                     }
                     
                 }
